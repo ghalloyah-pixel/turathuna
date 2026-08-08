@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الأمثال الشعبية | تراثنا أول وتالي</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="../index.html" class="logo">
+        <span class="logo-title">تراثنا أول وتالي 🇦🇪</span>
+        <span class="logo-tagline">من ذاكرة الأجداد… إلى جيل اليوم</span>
+      </a>
+      <nav class="main-nav">
+        <a href="../index.html">الرئيسية</a>
+        <a href="amthal.html" class="active">الأمثال</a>
+        <a href="kalimat.html">الكلمات</a>
+        <a href="san3.html">السنع</a>
+        <a href="ash3ar.html">الأشعار</a>
+        <a href="adat.html">العادات</a>
+        <a href="hiraf.html">الحرف</a>
+        <a href="masadir.html">المصادر</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="search-box">
+          <input type="search" id="globalSearch" class="search-input" placeholder="ابحث في الأمثال…">
+        </div>
+        <button class="nav-btn" onclick="toggleDarkMode()">🌙</button>
+        <a href="favorites.html" class="nav-btn">❤️</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <h1>أمثالنا… حكاية من حياة الأولين</h1>
+    <p>الأمثال الشعبية الإماراتية جزء أصيل من ذاكرة المجتمع، تناقلها الأجداد جيلًا بعد جيل، وحملت في كلماتها تجارب الحياة وقيم المجتمع ومواقفه.</p>
+  </div>
+
+  <section class="section">
+    <div class="legend">
+      <span><span class="badge badge-green">🟢 موثق رسميًا</span></span>
+      <span><span class="badge badge-blue">🔵 موثق في مصدر تراثي</span></span>
+      <span><span class="badge badge-yellow">🟡 تراث شفاهي موثق</span></span>
+      <span><span class="badge badge-orange">🟠 متداول ويحتاج إلى تحقق</span></span>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" onclick="filterByCategory('all', this)">الكل</button>
+      <button class="filter-btn" onclick="filterByCategory('hikma', this)">الحكمة</button>
+      <button class="filter-btn" onclick="filterByCategory('amal', this)">العمل</button>
+      <button class="filter-btn" onclick="filterByCategory('karam', this)">الكرم</button>
+      <button class="filter-btn" onclick="filterByCategory('sabr', this)">الصبر</button>
+      <button class="filter-btn" onclick="filterByCategory('bahr', this)">البحر</button>
+    </div>
+
+    <div class="cards-grid" style="grid-template-columns:1fr;">
+      <!-- مثل 1 -->
+      <article class="content-card" data-category="hikma">
+        <button class="fav-btn" data-id="mathal-1" data-type="مثل" data-text="اللي ما يعرف الصقر يشويه">🤍</button>
+        <div class="proverb-text">«اللي ما يعرف الصقر يشويه»</div>
+        <div class="meta-row">
+          <span class="badge badge-blue">🔵 موثق في مصدر تراثي</span>
+          <span class="badge" style="background:#E8D5B7;color:#4A3728;">حكمة</span>
+        </div>
+        <div class="detail-item"><strong>المعنى:</strong> يُقال لمن لا يعرف قيمة الشيء أو يقوم بعمل يجهله، فيسيء إليه أو يضيعه.</div>
+        <div class="detail-item"><strong>متى يُقال؟</strong> عند رؤية شخص يتعامل مع أمر ثمين أو مهم بطريقة غير مناسبة لأنه لا يقدّر قيمته.</div>
+        <div class="detail-item"><strong>العبرة:</strong> معرفة قيمة الأشياء والأشخاص قبل التصرف.</div>
+        <div class="source-note">
+          المصدر: مذكور في تغطيات إعلامية إماراتية مستندة إلى كتاب «المتوصف» ومصادر تراثية (مثل إمارات اليوم). يُتداول أيضًا في الخليج. يُنصح بالرجوع إلى طبعة «المتوصف» للتحقق الدقيق من الصيغة والمضرب.
+          <br><button onclick="copyText('اللي ما يعرف الصقر يشويه')" style="margin-top:0.5rem;font-size:0.8rem;cursor:pointer;background:none;border:1px solid #C4A574;padding:0.2rem 0.6rem;border-radius:6px;">نسخ المثل</button>
+        </div>
+      </article>
+
+      <!-- مثل 2 -->
+      <article class="content-card" data-category="amal">
+        <button class="fav-btn" data-id="mathal-2" data-type="مثل" data-text="اللي ما عنده عمل يكاري له جمل واللي ما عنده حيلة يلعب التيلة">🤍</button>
+        <div class="proverb-text">«اللي ما عنده عمل يكاري له جمل واللي ما عنده حيلة يلعب التيلة»</div>
+        <div class="meta-row">
+          <span class="badge badge-blue">🔵 موثق في مصدر تراثي</span>
+          <span class="badge" style="background:#E8D5B7;color:#4A3728;">العمل</span>
+        </div>
+        <div class="detail-item"><strong>المعنى:</strong> يدعو إلى العمل والابتعاد عن الفراغ والبطالة؛ من لا يجد عملًا فليبحث عن أي شغل، ومن لا حيلة له يضيع وقته في اللعب.</div>
+        <div class="detail-item"><strong>متى يُقال؟</strong> للحث على السعي والعمل وعدم الركون إلى الكسل.</div>
+        <div class="detail-item"><strong>العبرة:</strong> قيمة العمل وملء الوقت بما ينفع.</div>
+        <div class="source-note">
+          المصدر: مذكور في مصادر تراثية إماراتية ومقالات مستندة إلى توثيق الأمثال (مثل إمارات اليوم وكتاب المتوصف ضمن إصدارات مركز حمدان بن محمد لإحياء التراث).
+        </div>
+      </article>
+
+      <!-- مثل 3 -->
+      <article class="content-card" data-category="amal">
+        <button class="fav-btn" data-id="mathal-3" data-type="مثل" data-text="اللي ما يزرع الدبّاس ما ياخذ بنات الناس">🤍</button>
+        <div class="proverb-text">«اللي ما يزرع الدبّاس ما ياخذ بنات الناس»</div>
+        <div class="meta-row">
+          <span class="badge badge-blue">🔵 موثق في مصدر تراثي</span>
+          <span class="badge" style="background:#E8D5B7;color:#4A3728;">العمل / الأسرة</span>
+        </div>
+        <div class="detail-item"><strong>المعنى:</strong> يشير إلى أهمية العمل وكسب الرزق؛ من لا يعمل ولا ينتج لا يستحق الزواج أو تحمل المسؤولية.</div>
+        <div class="detail-item"><strong>متى يُقال؟</strong> في سياق الحث على العمل والاستقرار المادي قبل الزواج.</div>
+        <div class="detail-item"><strong>العبرة:</strong> العمل أساس القدرة على بناء أسرة.</div>
+        <div class="source-note">
+          المصدر: مذكور في تغطيات إعلامية إماراتية مرتبطة بتوثيق الأمثال (إمارات اليوم، مستندة إلى مصادر مثل المتوصف). الدبّاس نوع من التمور.
+        </div>
+      </article>
+
+      <!-- مثل 4 -->
+      <article class="content-card" data-category="hikma">
+        <button class="fav-btn" data-id="mathal-4" data-type="مثل" data-text="من كبّر اللقمة.. غص">🤍</button>
+        <div class="proverb-text">«من كبّر اللقمة.. غص»</div>
+        <div class="meta-row">
+          <span class="badge badge-orange">🟠 متداول ويحتاج إلى تحقق</span>
+          <span class="badge" style="background:#E8D5B7;color:#4A3728;">حكمة</span>
+        </div>
+        <div class="detail-item"><strong>المعنى:</strong> لمن يحاول أخذ أكثر من حقه أو يتجاوز قدره فيتعرض للمشكلة.</div>
+        <div class="detail-item"><strong>متى يُقال؟</strong> عند التحذير من الطمع أو تجاوز الحدود.</div>
+        <div class="detail-item"><strong>العبرة:</strong> الاعتدال وعدم الطمع.</div>
+        <div class="source-note">
+          المصدر: متداول في مقالات إماراتية. يُفضل التحقق من الصيغة الدقيقة في كتاب «المتوصف» أو مصادر مركز حمدان بن محمد لإحياء التراث قبل اعتباره مثلاً إماراتيًا خالصًا.
+        </div>
+      </article>
+
+      <!-- مثل 5 -->
+      <article class="content-card" data-category="bahr">
+        <button class="fav-btn" data-id="mathal-5" data-type="مثل" data-text="اللي ما يقيس قبل لا يغوص ما ينفعه الغوص عقب الغرق">🤍</button>
+        <div class="proverb-text">«اللي ما يقيس قبل لا يغوص ما ينفعه الغوص عقب الغرق»</div>
+        <div class="meta-row">
+          <span class="badge badge-orange">🟠 متداول ويحتاج إلى تحقق</span>
+          <span class="badge" style="background:#E8D5B7;color:#4A3728;">البحر / الحكمة</span>
+        </div>
+        <div class="detail-item"><strong>المعنى:</strong> من لا يحسب حسابه ويخطط قبل الدخول في أمر صعب، لا ينفعه الندم بعد وقوع المشكلة.</div>
+        <div class="detail-item"><strong>متى يُقال؟</strong> للحث على التخطيط والحذر قبل اتخاذ قرارات كبيرة.</div>
+        <div class="detail-item"><strong>العبرة:</strong> التخطيط أهم من الاندفاع.</div>
+        <div class="source-note">
+          المصدر: متداول في قوائم أمثال شعبية إماراتية على مواقع إخبارية. يُنصح بالتحقق من كتاب «المتوصف» أو مصادر رسمية.
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-2" style="background:var(--sand-light);padding:1.2rem;border-radius:12px;font-size:0.9rem;color:var(--text-muted);">
+      <strong>ملاحظة مهمة:</strong> الأمثال أعلاه مستمدة من مصادر عامة ومتداولة في الإعلام الإماراتي المرتبط بتوثيق التراث (ومنها إشارات إلى كتاب «المتوصف» لعبدالله حمدان بن دلموك، إصدار مركز حمدان بن محمد لإحياء التراث). للتحقق الدقيق من كل مثل وصيغته ومضربه، يُرجى الرجوع إلى الطبعة الورقية أو الرقمية الرسمية للكتاب والمصادر الأكاديمية. بعض الأمثال مشتركة خليجيًا.
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">تراثنا أول وتالي 🇦🇪</div>
+      <div class="footer-tagline">«من ذاكرة الأجداد… إلى جيل اليوم.»</div>
+      <p class="footer-note">هذا الموقع مشروع ثقافي يهدف إلى التعريف بالتراث الإماراتي مع الحرص على المصادر الموثوقة.</p>
+    </div>
+  </footer>
+  <script src="../js/app.js"></script>
+</body>
+</html>

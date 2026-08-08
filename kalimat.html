@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الكلمات الإماراتية | تراثنا أول وتالي</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="../index.html" class="logo">
+        <span class="logo-title">تراثنا أول وتالي 🇦🇪</span>
+        <span class="logo-tagline">من ذاكرة الأجداد… إلى جيل اليوم</span>
+      </a>
+      <nav class="main-nav">
+        <a href="../index.html">الرئيسية</a>
+        <a href="amthal.html">الأمثال</a>
+        <a href="kalimat.html" class="active">الكلمات</a>
+        <a href="san3.html">السنع</a>
+        <a href="ash3ar.html">الأشعار</a>
+        <a href="adat.html">العادات</a>
+        <a href="hiraf.html">الحرف</a>
+        <a href="masadir.html">المصادر</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="search-box">
+          <input type="search" id="globalSearch" class="search-input" placeholder="ابحث عن كلمة…">
+        </div>
+        <button class="nav-btn" onclick="toggleDarkMode()">🌙</button>
+        <a href="favorites.html" class="nav-btn">❤️</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <h1>كلماتنا… ذاكرة وطن</h1>
+    <p>اللهجة الإماراتية ذاكرة وطن، تحمل في مفرداتها تفاصيل حياة الأجداد وبيئاتهم المختلفة؛ من البحر والصحراء والجبال إلى النخيل والبيوت والمجالس.</p>
+  </div>
+
+  <section class="section">
+    <div class="legend">
+      <span><span class="badge badge-blue">🔵 موثق في مصدر تراثي</span></span>
+      <span><span class="badge badge-yellow">🟡 تراث شفاهي / متداول</span></span>
+      <span><span class="badge badge-orange">🟠 يحتاج إلى تحقق إضافي</span></span>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" onclick="filterByCategory('all', this)">الكل</button>
+      <button class="filter-btn" onclick="filterByCategory('bahr', this)">بحر</button>
+      <button class="filter-btn" onclick="filterByCategory('yaumi', this)">يومي</button>
+      <button class="filter-btn" onclick="filterByCategory('dakhil', this)">دخيلة</button>
+    </div>
+
+    <div class="cards-grid" style="grid-template-columns:1fr;">
+      <!-- النوخذة -->
+      <article class="content-card" data-category="bahr">
+        <button class="fav-btn" data-id="kalima-nokhatha" data-type="كلمة" data-text="النوخذة">🤍</button>
+        <div class="word-text">النوخذة</div>
+        <div class="meta-row">
+          <span class="badge badge-blue">🔵 موثق</span>
+          <span class="badge" style="background:#D1ECF1;color:#0C5460;">بحر</span>
+        </div>
+        <div class="detail-item"><strong>المعنى:</strong> ربان السفينة وقائدها، والمسؤول عن الرحلة والطاقم والقرارات الملاحية والاقتصادية.</div>
+        <div class="detail-item"><strong>طريقة الاستخدام:</strong> يُقال «النوخذة» لمن يقود المركب أو يُشار إليه كقائد الرحلة البحرية.</div>
+        <div class="detail-item"><strong>مثال:</strong> «النوخذة أمر بالإبحار مع طلوع الفجر.»</div>
+        <div class="detail-item"><strong>البيئة:</strong> بحر / غوص / تجارة بحرية</div>
+        <div class="detail-item"><strong>الأصل:</strong> مصطلح خليجي قديم مستخدم في الإمارات ودول الخليج.</div>
+        <div class="source-note">
+          المصدر: متداول في الدراسات التراثية البحرية الخليجية والإماراتية، ومذكور في مصادر إخبارية وتراثية (مثل الاتحاد، ومواقع تراثية). يُعتبر من المفردات الأساسية في التراث البحري.
+        </div>
+      </article>
+
+      <!-- النهام -->
+      <article class="content-card" data-category="bahr">
+        <button class="fav-btn" data-id="kalima-nahham" data-type="كلمة" data-text="النهّام">🤍</button>
+        <div class="word-text">النهّام</div>
+        <div class="meta-row">
+          <span class="badge badge-blue">🔵 موثق</span>
+          <span class="badge" style="background:#D1ECF1;color:#0C5460;">بحر</span>
+        </div>
+        <div class="detail-item"><strong>المعنى:</strong> الرجل الذي يردد الحدوات والنهمات (الأهازيج) على متن المركب لتشجيع البحارة ورفع معنوياتهم أثناء العمل الشاق في الغوص أو الإبحار.</div>
+        <div class="detail-item"><strong>طريقة الاستخدام:</strong> يُذكر كدور أساسي في طاقم السفينة إلى جانب النوخذة والغواصين.</div>
+        <div class="detail-item"><strong>مثال:</strong> «كان النهام يشد من أزر الرجال بنهمته.»</div>
+        <div class="detail-item"><strong>البيئة:</strong> بحر / غوص</div>
+        <div class="detail-item"><strong>الأصل:</strong> مرتبط بفن النهمة الخليجي، معروف في الإمارات وعمان والخليج.</div>
+        <div class="source-note">
+          المصدر: مذكور في مقالات تراثية (مثل الجزيرة نت، والبيان) وفي توثيق فنون البحر. النهمة فن خليجي مرتبط برحلات الغوص.
+        </div>
+      </article>
+
+      <!-- السنع -->
+      <article class="content-card" data-category="yaumi">
+        <button class="fav-btn" data-id="kalima-san3" data-type="كلمة" data-text="السنع">🤍</button>
+        <div class="word-text">السنع</div>
+        <div class="meta-row">
+          <span class="badge badge-blue">🔵 موثق</span>
+          <span class="badge" style="background:#E8D5B7;color:#4A3728;">قيم / يومي</span>
+        </div>
+        <div class="detail-item"><strong>المعنى:</strong> مجموعة العادات والآداب والسلوكيات المتوارثة في المجتمع الإماراتي، تشمل احترام الكبير، إكرام الضيف، آداب المجلس، وتقديم القهوة وغيرها.</div>
+        <div class="detail-item"><strong>طريقة الاستخدام:</strong> «هذا من السنع» أو «يلتزم بالسنع».</div>
+        <div class="detail-item"><strong>مثال:</strong> «السنع يبدأ من البيت وينعكس في المجلس.»</div>
+        <div class="detail-item"><strong>البيئة:</strong> مجلس / بيت / حياة اجتماعية</div>
+        <div class="detail-item"><strong>الأصل:</strong> مرتبط باللغة العربية (معنى الجمال والشرف)، واستُخدم في الإمارات للدلالة على الآداب المتوارثة.</div>
+        <div class="source-note">
+          المصدر: مذكور بكثرة في الإعلام الإماراتي (الخليج، إمارات اليوم، البيان) وفي برامج التربية والهوية الوطنية. مركز حمدان بن محمد لإحياء التراث أصدر مواد تتعلق بالسنع.
+        </div>
+      </article>
+
+      <!-- الفزعة -->
+      <article class="content-card" data-category="yaumi">
+        <button class="fav-btn" data-id="kalima-faz3a" data-type="كلمة" data-text="الفزعة">🤍</button>
+        <div class="word-text">الفزعة</div>
+        <div class="meta-row">
+          <span class="badge badge-yellow">🟡 متداول</span>
+          <span class="badge" style="background:#E8D5B7;color:#4A3728;">قيم</span>
+        </div>
+        <div class="detail-item"><strong>المعنى:</strong> النخوة والمساعدة السريعة للآخرين عند الحاجة أو الشدة، دون انتظار مقابل.</div>
+        <div class="detail-item"><strong>طريقة الاستخدام:</strong> «فزعت له» أي ساعدته بسرعة.</div>
+        <div class="detail-item"><strong>البيئة:</strong> حياة اجتماعية / قيم</div>
+        <div class="source-note">
+          المصدر: متداول في اللهجة الإماراتية والخليجية كقيمة اجتماعية. يُفضل التحقق من معاجم اللهجة الإماراتية (مثل إصدارات نادي تراث الإمارات) للتأصيل الدقيق.
+        </div>
+      </article>
+
+      <!-- دخيلة: موتر -->
+      <article class="content-card" data-category="dakhil">
+        <button class="fav-btn" data-id="kalima-motor" data-type="كلمة" data-text="موتر">🤍</button>
+        <div class="word-text">موتر</div>
+        <div class="meta-row">
+          <span class="badge badge-blue">🔵 موثق كدخيل</span>
+          <span class="badge" style="background:#FFF3CD;color:#856404;">دخيلة</span>
+        </div>
+        <div class="detail-item"><strong>المعنى:</strong> السيارة.</div>
+        <div class="detail-item"><strong>الأصل:</strong> من الإنجليزية Motor.</div>
+        <div class="detail-item"><strong>البيئة:</strong> حياة يومية حديثة</div>
+        <div class="source-note">
+          المصدر: معروف كلفظ دخيل في اللهجة الإماراتية والخليجية (مذكور في دراسات اللهجات والمراجع العامة عن الألفاظ الدخيلة).
+        </div>
+      </article>
+
+      <!-- دخيلة: بيزات -->
+      <article class="content-card" data-category="dakhil">
+        <button class="fav-btn" data-id="kalima-bizat" data-type="كلمة" data-text="بيزات">🤍</button>
+        <div class="word-text">بيزات</div>
+        <div class="meta-row">
+          <span class="badge badge-blue">🔵 موثق كدخيل</span>
+          <span class="badge" style="background:#FFF3CD;color:#856404;">دخيلة</span>
+        </div>
+        <div class="detail-item"><strong>المعنى:</strong> نقود / فلوس.</div>
+        <div class="detail-item"><strong>الأصل:</strong> من الهندية (بيسا / بيسة).</div>
+        <div class="detail-item"><strong>البيئة:</strong> حياة يومية / تجارة</div>
+        <div class="source-note">
+          المصدر: مذكور في دراسات اللهجات الإماراتية كلفظ دخيل من التأثير الهندي بسبب التجارة التاريخية.
+        </div>
+      </article>
+    </div>
+
+    <div class="mt-2" style="background:var(--sand-light);padding:1.2rem;border-radius:12px;font-size:0.9rem;">
+      <strong>قسم «كلمات دخلت لهجتنا»:</strong> اللهجة الإماراتية تأثرت تاريخيًا بالتجارة والتواصل مع شعوب مختلفة (هندية، فارسية، إنجليزية…). أمثلة أخرى متداولة: خرده، ليت، جوتي، زولية، بنكه، كيرخانه. يُنصح بالرجوع إلى «معجم ألفاظ لهجة الإمارات وتأصيلها» (نادي تراث الإمارات) للتحقق العلمي.
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo">تراثنا أول وتالي 🇦🇪</div>
+      <p class="footer-note">لا نعتبر كل كلمة متداولة «إماراتية أصلية» تلقائيًا؛ نصنفها حسب مصدرها المتاح.</p>
+    </div>
+  </footer>
+  <script src="../js/app.js"></script>
+</body>
+</html>
