@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تراثنا أول وتالي | الموقع التراثي الإماراتي</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>تراثنا</h1>
+                <p class="tagline">أول وتالي</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#discover">اكتشف</a></li>
+                <li><a href="pages/amthal.html">الأمثال</a></li>
+                <li><a href="pages/klmat.html">الكلمات</a></li>
+                <li><a href="pages/hekam.html">الحكم</a></li>
+                <li><a href="pages/ashear.html">الأشعار</a></li>
+                <li><a href="pages/adat.html">العادات</a></li>
+                <li><a href="pages/heraf.html">الحرف</a></li>
+                <li><a href="pages/sources.html">المصادر</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="search-btn" id="searchBtn">🔍</button>
+                <button class="favorites-btn" id="favoritesBtn">❤️</button>
+                <button class="theme-btn" id="themeBtn">🌙</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2 class="hero-title">تراثنا أول وتالي</h2>
+            <p class="hero-subtitle">من ذاكرة الأجداد… إلى جيل اليوم. 🇦🇪</p>
+            <p class="hero-description">
+                «تراثنا أول وتالي» مساحة رقمية تجمع ملامح من التراث الإماراتي، من الأمثال والكلمات الشعبية إلى الحكم والأشعار والحرف والعادات، بهدف حفظ الموروث الإماراتي وتعريف الأجيال الجديدة به بطريقة سهلة وتفاعلية.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('discover').scrollIntoView({behavior: 'smooth'})">اكتشف تراثنا</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('discover').scrollIntoView({behavior: 'smooth'})">ابدأ الرحلة</button>
+            </div>
+        </div>
+        <div class="hero-pattern"></div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section" id="searchSection" style="display: none;">
+        <div class="search-container">
+            <input type="text" id="searchInput" class="search-input" placeholder="ابحث في تراث الإمارات...">
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    </section>
+
+    <!-- Discover Section -->
+    <section class="discover-section" id="discover">
+        <div class="container">
+            <h2 class="section-title">الأقسام الرئيسية</h2>
+            <p class="section-subtitle">اختر القسم الذي تريد استكشافه</p>
+
+            <div class="categories-grid">
+                <!-- Category Cards -->
+                <div class="category-card" onclick="window.location.href='pages/amthal.html'">
+                    <div class="card-icon">🪶</div>
+                    <h3>الأمثال الشعبية</h3>
+                    <p>أمثالنا… حكاية من حياة الأولين</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/klmat.html'">
+                    <div class="card-icon">🗣️</div>
+                    <h3>الكلمات الإماراتية</h3>
+                    <p>كلماتنا… ذاكرة وطن</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/hekam.html'">
+                    <div class="card-icon">💡</div>
+                    <h3>الحكم والعِظات</h3>
+                    <p>حكمة الأولين… درس للآخرين</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/ashear.html'">
+                    <div class="card-icon">📜</div>
+                    <h3>الأشعار الإماراتية</h3>
+                    <p>شعرنا… صوت الإمارات</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/adat.html'">
+                    <div class="card-icon">🏡</div>
+                    <h3>العادات والتقاليد</h3>
+                    <p>عاداتنا… هويتنا</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/sanaa.html'">
+                    <div class="card-icon">☕</div>
+                    <h3>السنع والضيافة</h3>
+                    <p>السنع… أصول ما تتغير</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/heraf.html'">
+                    <div class="card-icon">🌴</div>
+                    <h3>الحرف والمهن</h3>
+                    <p>حرفنا… موروث الأجداد</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/bahr.html'">
+                    <div class="card-icon">🌊</div>
+                    <h3>البحر والغوص</h3>
+                    <p>البحر… رزق الأولين</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/bar.html'">
+                    <div class="card-icon">🏜️</div>
+                    <h3>البر والصحراء</h3>
+                    <p>البر… ذاكرة الأجداد</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/azya.html'">
+                    <div class="card-icon">👗</div>
+                    <h3>الأزياء الإماراتية</h3>
+                    <p>زينتنا… هويتنا وفخرنا</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/aklat.html'">
+                    <div class="card-icon">🍚</div>
+                    <h3>الأكلات الشعبية</h3>
+                    <p>أطباقنا… طعم الذاكرة</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/fnoon.html'">
+                    <div class="card-icon">🎶</div>
+                    <h3>الفنون الشعبية</h3>
+                    <p>فنوننا… إيقاع التراث</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/ibel.html'">
+                    <div class="card-icon">🐪</div>
+                    <h3>الإبل والصقارة</h3>
+                    <p>الإبل… سفينة الصحراء</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/omran.html'">
+                    <div class="card-icon">🏠</div>
+                    <h3>البيوت والعمارة</h3>
+                    <p>بيوتنا القديمة… روح المكان</p>
+                </div>
+
+                <div class="category-card" onclick="window.location.href='pages/shakhsiat.html'">
+                    <div class="card-icon">📚</div>
+                    <h3>شخصيات من التراث</h3>
+                    <p>أبطالنا… رموز الوطن</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content Section -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title">اكتشف تراثك</h2>
+            
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <button class="random-btn" id="randomBtn">🎲 فاجئني بتراثنا</button>
+                    <div id="randomContent" class="random-content"></div>
+                </div>
+
+                <div class="featured-card">
+                    <h3>اختبر معلوماتك</h3>
+                    <p>كم تعرف عن تراث الإمارات؟</p>
+                    <button class="btn btn-secondary" onclick="window.location.href='pages/quiz.html'">ابدأ الاختبار</button>
+                </div>
+
+                <div class="featured-card">
+                    <h3>استكشف الخريطة</h3>
+                    <p>تراث كل إمارة</p>
+                    <button class="btn btn-secondary" onclick="window.location.href='pages/map.html'">الخريطة التفاعلية</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>تراثنا أول وتالي 🇦🇪</h3>
+                <p class="footer-tagline">«من ذاكرة الأجداد… إلى جيل اليوم.»</p>
+            </div>
+            <div class="footer-links">
+                <a href="pages/amthal.html">الأمثال</a>
+                <a href="pages/klmat.html">الكلمات</a>
+                <a href="pages/hekam.html">الحكم</a>
+                <a href="pages/ashear.html">الأشعار</a>
+                <a href="pages/adat.html">العادات</a>
+                <a href="pages/heraf.html">الحرف</a>
+                <a href="pages/sources.html">المصادر</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>هذا الموقع مشروع ثقافي يهدف إلى التعريف بالتراث الإماراتي والمحافظة عليه رقميًا، مع الحرص على الرجوع إلى المصادر الموثوقة ونسبة المعلومات إلى أصحابها ومصادرها.</p>
+        </div>
+    </footer>
+
+    <!-- Favorites Modal -->
+    <div id="favoritesModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeFavoritesModal()">&times;</span>
+            <h2>المفضلة ❤️</h2>
+            <div id="favoritesList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
